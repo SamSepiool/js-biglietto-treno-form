@@ -9,7 +9,7 @@ body{
     background-color: #b91450;
 }
 
-h1{
+h1, h2{
     text-align: center;
     color: white;
 }
@@ -24,6 +24,23 @@ h1{
 }
 
 .ticket_box{
+    background-color: #fff;
     width: 80%;
     margin: auto;
+    display: none;
+}
+.ticket_info{
+    display: flex;
+    justify-content: flex-start;
+}
+.tile{
+    display: inline-block;
+    width: 15%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+
+.ticket_box.open{
+    display: block;
 }
