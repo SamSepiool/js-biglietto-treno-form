@@ -45,4 +45,19 @@ btnGenera.addEventListener("click",
 
 )
 
+btnAnnulla.addEventListener("click",
+
+    function() {
+        // ticket_box non visibile
+        document.getElementById("biglietto").classList.remove("open");
+
+        // reset campi
+        document.getElementById("nome_cognome").value = "";
+        document.getElementById("km").value = "";
+        document.getElementById("fascia").value = "";
+        
+    }
+
+)
+
 
