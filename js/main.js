@@ -23,8 +23,21 @@ btnGenera.addEventListener("click",
             console.log(prezzoBiglietto);
         }
 
-       
+        // stampare dati biglietto su html
+        document.getElementById('nome_passeggero').innerHTML = nome;
+        if ( fasciaEta == "minorenne" ) {
+            document.getElementById('offerta').innerHTML = "Sconto minorenni";
+        } else if ( fasciaEta == "over" ) {
+            document.getElementById('offerta').innerHTML = "Sconto silver";
 
+        } else {
+            document.getElementById('offerta').innerHTML = "Biglietto Standard"
+        }
+        // carrozza e codice cp
+        document.getElementById('carrozza').innerHTML = Math.floor( Math.random() * 10) + 1;
+        document.getElementById('cp').innerHTML = Math.floor( Math.random() * ( 99999 - 90000 ) ) + 90000;
+        // stampa prezzo
+        document.getElementById('totale').innerHTML = prezzoBiglietto.toFixed(2) + " €";
 
         // ticket_box visibile
         document.getElementById("biglietto").classList.add("open");
