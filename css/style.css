@@ -1,0 +1,29 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b91450;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.input_field{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.ticket_box{
+    width: 80%;
+    margin: auto;
+}
